@@ -8,7 +8,7 @@ spring:
     name: bff
 
   datasource:
-    url: jdbc:mysql://localhost:3306/backend_s5?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://mysql:3306/backend_s5?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
     username: root
     password: 0k4mysm0.23
     driver-class-name: com.mysql.cj.jdbc.Driver
