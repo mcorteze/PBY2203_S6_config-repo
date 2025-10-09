@@ -4,7 +4,15 @@ server:
 spring:
   application:
     name: gateway-server
+
+  config:
+    import: optional:configserver:
+
   cloud:
+    config:
+      uri: http://config-server:8888
+      fail-fast: true
+
     gateway:
       discovery:
         locator:
@@ -15,3 +23,14 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
