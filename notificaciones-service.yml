@@ -1,3 +1,4 @@
+# notificaciones-service.yml
 server:
   port: 8082
 
