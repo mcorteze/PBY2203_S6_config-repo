@@ -19,6 +19,13 @@ spring:
         dialect: org.hibernate.dialect.MySQLDialect
   kafka:
     bootstrap-servers: kafka:9092
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://dummy
 
 eureka:
   client:
