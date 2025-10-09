@@ -1,9 +1,0 @@
-# transacciones-service.yml
-server:
-  port: 8082
-
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/banco
-    username: root
-    password: 1234
