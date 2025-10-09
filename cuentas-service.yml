@@ -6,7 +6,7 @@ spring:
   application:
     name: cuentas-service
   datasource:
-    url: jdbc:mysql://mysql:3306/cuentasdb?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://mysql:3306/cuentasdb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -31,4 +31,3 @@ logging:
   level:
     org.springframework: INFO
     cl.duoc.bff: DEBUG
-
