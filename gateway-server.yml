@@ -1,10 +1,11 @@
-# gawway-server.yml
+# gateway-server.yml
 server:
   port: 8080
 
 spring:
   application:
     name: gateway-server
+
   cloud:
     gateway:
       discovery:
@@ -23,7 +24,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: health,info,env,metrics
   endpoint:
     health:
       show-details: always
